@@ -9,20 +9,20 @@ dirName = os.path.basename(dirPath)
 
 
 class TG_CONFIG:
-    api_id = 
+    api_id = 27476108
 
-    api_hash = ""
+    api_hash = "ed25a3c999b0849364a83b11bea390a0"
 
-    bot_token = ""
+    bot_token = "7239854258:AAHLnM1Sm6xHQ0CByRvzqp7xvQH-1YWyFfc"
 
     #DEVS or #OWNERS
-    sudo_users = [1984763765, 6360672597]
+    sudo_users = [5422016608, -1002194778020]
 
-    session = "conan76_web_dl_bot"
+    session = "blaster_tataplay_bot"
 
-    bot_creater = "Conan76"  # Don't Remove if you Respect the DEV
+    bot_creater = "BLASTER"  # Don't Remove if you Respect the DEV
 
-    bot_creater_id = "@conan7612"  # Don't Remove if you Respect the DEV
+    bot_creater_id = "@BlasterOriginals"  # Don't Remove if you Respect the DEV
 
 
 class UPLOAD_CONGIF:
@@ -35,7 +35,7 @@ class GDRIVE_CONFIG:
     root_folder_id = ""
 
     #keep it empty if you don't have index link or don't touch
-    indexlink_format = "https://example.workers.dev/0:/{}/{}"
+    indexlink_format = "https://blastergadu.blasteranna1414.workers.dev/0:/{}/{}"
 
     is_making_drive_files_public = True
 
@@ -80,10 +80,10 @@ class FILENAME_CONFIG:
 
     underscore_before_after_group_tag = "__"
 
-    language_order = ['hi', 'ta', 'te', 'bn', 'gu', 'pa', 'as', 'or',
+    language_order = ['te', 'ta', 'hi', 'bn', 'gu', 'pa', 'as', 'or',
                     'ml', 'mr', 'kn', 'th', 'ja', 'th', 'id', 'ms', 'ko', 'bho', 'bh', 'en']
 
-    default_group_tag = "RV" # Don't change it if you Respect the DEV
+    default_group_tag = "BLASTER" # Don't change it if you Respect the DEV
 
     #Dict made to add Group Tag according to the user requesting to DL (according to there TG ID) if not in list then takes the default_group_tag
     group_tag_mapping = {

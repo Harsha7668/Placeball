@@ -32,7 +32,7 @@ class UPLOAD_CONGIF:
 
 class GDRIVE_CONFIG:
     #for Gdrive (Leave it as Empty String if not Gdrive Upload is turned ON)
-    root_folder_id = ""
+    root_folder_id = "1j83pj6sIL2mfNiWFqOYbb21vvNvlTwqd"
 
     #keep it empty if you don't have index link or don't touch
     indexlink_format = "https://blastergadu.blasteranna1414.workers.dev/0:/{}/{}"

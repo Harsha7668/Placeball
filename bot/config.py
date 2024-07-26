@@ -26,7 +26,7 @@ class TG_CONFIG:
 
 
 class UPLOAD_CONGIF:
-    upload_to = "tg" #tg, ftp, gdrive
+    upload_to = "gd" #tg, ftp, gdrive
     default_upload_to = "tg"
 
 

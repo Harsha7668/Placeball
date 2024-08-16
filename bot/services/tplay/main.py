@@ -64,10 +64,10 @@ class TPLAY():
         date_text = "{}-{}".format(self.parsed_args.start, self.parsed_args.end)
         begin, end, date_data, time_data = get_tplay_past_details(date_text)
         hmac = self.ott_api.get_hmac()
-        mpd = self.channel_data.get('manifest_url').replace("bpweb", "bpprod").replace(".akamaized", "catchup.akamaized") + "?begin=" + str(begin) + "&end=" + str(end) + "&" + hmac
-        key = [keys for keys in self.channel_data.get('clearkeys') if keys.get('source') == "media_segment"][0]['hex']
+        mpd = self.channel_data.get('initialUrl').replace("bpweb", "bpprod").replace(".akamaized", "catchup.akamaized") + "?begin=" + str(begin) + "&end=" + str(end) + "&" + hmac
+        key = self.channel_data.get('hex', None)
 
-        init_title = self.parsed_args.title if self.parsed_args.title != "" else self.channel_data.get('name')
+        init_title = self.parsed_args.title if self.parsed_args.title != "" else self.channel_data.get('title')
 
         name = "{} {}".format(init_title, time_data)
 
@@ -88,7 +88,7 @@ class TPLAY():
         video_resolution=self.parsed_args.resolution,
         video_quality=self.parsed_args.vquality, audio_quality=self.parsed_args.aquality,
         alang=self.parsed_args.alang, init_file_name=name, ott=self.ott, fallback_language=None,
-        headers = self.channel_data.get('manifest_headers')).start_process()
+        headers="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36").start_process()
 
         # except Exception as e:
         #     self.message.reply_text(

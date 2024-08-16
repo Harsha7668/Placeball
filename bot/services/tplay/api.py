@@ -22,8 +22,8 @@ def within_12_hours(timestamp):
 
 class TPLAY_API():
     API_ALL_CHANNELS = "https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels?limit=1000"
-    FETCHER = "https://tplayapi.code-crafters.app/321codecrafters/fetcher.json"
-    HMAC = "https://tplayapi.code-crafters.app/321codecrafters/hmac.json".format(random.randint(10,99))
+    FETCHER = "https://fox.toxic-gang.xyz/tata/channels"
+    HMAC = "https://fox.toxic-gang.xyz/tata/hmac".format(random.randint(10,99))
     HMAC_v2 = "".format(random.randint(10,99))
 
     def __init__(self, channel_slug):
@@ -33,21 +33,21 @@ class TPLAY_API():
 
     def get_hmac_v2(self):
         response = requests.get(self.HMAC).json()['data']
-        return response['hmac']['hdnea']['value']
+        return response['hmac']
 
 
     def get_hmac(self):
         response = requests.get(self.HMAC)
         response.raise_for_status()
         data = response.json()
-        hdnea = data['data']['hmac']['hdnea']['value']
+        hdnea = data['data']['hmac']
         res = hdnea.split('exp=', 1)[1]
         return res
 
     def get_data(self):
       
 
-        data = [channel for channel in self.channels['data']['channels'] if (channel.get('name').replace(" ", "").lower() == self.channel_slug.lower())][0]
+        data = [channel for channel in self.channels['data']['channels'] if (channel.get('title').replace(" ", "").lower() == self.channel_slug.lower())][0]
 
         if data:
             return data

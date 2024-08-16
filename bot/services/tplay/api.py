@@ -47,7 +47,7 @@ class TPLAY_API():
     def get_data(self):
       
 
-        data = [channel for channel in self.channels['data']['channels'] if (channel.get('title').replace(" ", "").lower() == self.channel_slug.lower())][0]
+        data = [channel for channel in self.channels['data'] if (channel.get('title').replace(" ", "").lower() == self.channel_slug.lower())][0]
 
         if data:
             return data

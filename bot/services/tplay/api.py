@@ -22,8 +22,8 @@ def within_12_hours(timestamp):
 
 class TPLAY_API():
     API_ALL_CHANNELS = "https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels?limit=1000"
-    FETCHER = "https://yuvraj.fun/tp-qbcde/oldfetcher.json"
-    HMAC = "https://yuvraj.fun/tp-qbcde/oldhmac.json".format(random.randint(10,99))
+    FETCHER = "https://tplayapi.code-crafters.app/321codecrafters/fetcher.json"
+    HMAC = "https://tplayapi.code-crafters.app/321codecrafters/hmac.json".format(random.randint(10,99))
     HMAC_v2 = "".format(random.randint(10,99))
 
     def __init__(self, channel_slug):

@@ -198,9 +198,9 @@ class Filename:
         if FILENAME_CONFIG.filename_format == "p2p":
             init_file_name = self.init_file_name.replace(" ", ".")
             if language_and_audio_parts is not None:
-                filename = f"{init_file_name}.{video_resolution}.{video_quality}.{self.ott}.WEB-DL.{'-'.join(language_and_audio_parts)}.{video_codec_p2p}.{range}.{subtitle_write_data}-{self.GR}.mkv"
+                filename = f"{init_file_name}.WEB-DLS.mkv"
             else:
-                filename = f"{init_file_name}.{video_resolution}.{video_quality}.{self.ott}.WEB-DL.{self.audio_codec_name}.{video_codec_p2p}.{range}.{subtitle_write_data}-{self.GR}.mkv"
+                filename = f"{init_file_name}.mkv"
 
 
         else:

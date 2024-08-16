@@ -24,7 +24,7 @@ class TPLAY_API():
     API_ALL_CHANNELS = "https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels?limit=1000"
     FETCHER = "https://yuvraj.fun/tp-qbcde/oldfetcher.json"
     HMAC = "https://yuvraj.fun/tp-qbcde/oldhmac.json".format(random.randint(10,99))
-    HMAC_v2 = "https://yuvraj43.xyz/test/ghjqw/manifest.mpd?id=587".format(random.randint(10,99))
+    HMAC_v2 = "".format(random.randint(10,99))
 
     def __init__(self, channel_slug):
         self.channel_slug = channel_slug

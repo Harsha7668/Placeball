@@ -9,20 +9,20 @@ dirName = os.path.basename(dirPath)
 
 
 class TG_CONFIG:
-    api_id = 27476108
+    api_id = 10811400
 
-    api_hash = "ed25a3c999b0849364a83b11bea390a0"
+    api_hash = "191bf5ae7a6c39771e7b13cf4ffd1279"
 
-    bot_token = "7239854258:AAHLnM1Sm6xHQ0CByRvzqp7xvQH-1YWyFfc"
+    bot_token = "7412278588:AAFKWhBga4p9sqXT9OcaYt41nQz14IVmQyA"
 
     #DEVS or #OWNERS
-    sudo_users = [5422016608, -1002194778020]
+    sudo_users = [6469754522, -1002173560131]
 
-    session = "blaster_tataplay_bot"
+    session = "Sunrises_24_web_dl_bot"
 
-    bot_creater = "BLASTER"  # Don't Remove if you Respect the DEV
+    bot_creater = "Sunrises_24"  # Don't Remove if you Respect the DEV
 
-    bot_creater_id = "@BlasterOriginals"  # Don't Remove if you Respect the DEV
+    bot_creater_id = "@Sunrises_24"  # Don't Remove if you Respect the DEV
 
 
 class UPLOAD_CONGIF:
@@ -32,10 +32,10 @@ class UPLOAD_CONGIF:
 
 class GDRIVE_CONFIG:
     #for Gdrive (Leave it as Empty String if not Gdrive Upload is turned ON)
-    root_folder_id = "1j83pj6sIL2mfNiWFqOYbb21vvNvlTwqd"
+    root_folder_id = "161TCoFX8hIsjguxLQEm7SbeNKHZzofF1"
 
     #keep it empty if you don't have index link or don't touch
-    indexlink_format = "https://blastergadu.blasteranna1414.workers.dev/0:/{}/{}"
+    indexlink_format = "https://sunrisesharsha.sunriseseditsoffical249.workers.dev/0:/{}/{}"
 
     is_making_drive_files_public = True
 
@@ -83,12 +83,11 @@ class FILENAME_CONFIG:
     language_order = ['te', 'ta', 'hi', 'bn', 'gu', 'pa', 'as', 'or',
                     'ml', 'mr', 'kn', 'th', 'ja', 'th', 'id', 'ms', 'ko', 'bho', 'bh', 'en']
 
-    default_group_tag = "BLASTER" # Don't change it if you Respect the DEV
+    default_group_tag = "Sunrises24Rips" # Don't change it if you Respect the DEV
 
     #Dict made to add Group Tag according to the user requesting to DL (according to there TG ID) if not in list then takes the default_group_tag
     group_tag_mapping = {
-        '1984763765': 'Conan76',
-        '6360672597' : 'RV'
+        '6469754522': 'Sunrises24Rips'
     }
 
 

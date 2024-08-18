@@ -13,7 +13,7 @@ class TG_CONFIG:
 
     api_hash = "191bf5ae7a6c39771e7b13cf4ffd1279"
 
-    bot_token = "7412278588:AAFKWhBga4p9sqXT9OcaYt41nQz14IVmQyA"
+    bot_token = "7412278588:AAHmk19iP3uK79OglBISjicbl70TD6i9wEc"
 
     #DEVS or #OWNERS
     sudo_users = [6469754522, -1002173560131]
